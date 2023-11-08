@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KwonChin Birds</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #000 url('platform.png') no-repeat center center;
+        background-size: cover;
+        background-size: 1500px 800px;
+      }
+      canvas {
+        border: 1px solid white; /* Optional, for visibility */
+      }
+    </style>
+</head>
+<body onclick="showText()">
+    <div id="canvas-container"></div>
+    <p id="infoText" style="display:none; font-family: system-ui; color: #a2a2a2; line-height: 1.5em;">👉 Press "Space" to reset the pumpkin.<br>👉 "Enter" to clear the world.<br>👉 Editor mode: hold down 'q', 'w', 'e', 'r', or 't' (game objects) or 'm' (monsters), and click to add objects to the world and create your own structures.<br>👉 Looking for a Midjourney prompts bundle to learn how to generate AI images? Here you go: <a href="https://bestaiprompts.art/" style="cursor: pointer; color: #f1501f;">Best AI Prompts</a>.</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
